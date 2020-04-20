@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline' gap:; style-src 'self' 'unsafe-inline'; media-src *" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap5.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <title>CheckApp Mobile</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+</head>
+
+<body class="text-center" background="https://files.123freevectors.com/wp-content/original/132365-geometric-abstract-blue-green-and-white-background-graphic.jpg" style="background-attachment: fixed">
+
+    <div id="header" class="container text-center">
+        <p></p>
+        <img alt="" src="https://scontent.fhmo2-2.fna.fbcdn.net/v/t1.15752-9/93608008_223368162251642_2628601439206768640_n.png?_nc_cat=106&_nc_sid=b96e70&_nc_eui2=AeHu1cs37iihcEkdRoecOjHA3v3SD1e1gCPe_dIPV7WAI3ctpkcYCp9jZsv4BO3cz3SO9oFX5uV_GNy3GH88udYz&_nc_oc=AQkOPiiqREWkn8AimI7sbktBLIiajBlHAkOYhNpKEz2CUjybZC3gy9-goVQTaVMhbeCTs_aO1Jt_sUR5_jAeqfQA&_nc_ht=scontent.fhmo2-2.fna&oh=537c54351402918d4555dc165fac1679&oe=5EC354E5" style="width: 102px; height: 98px;" /></span></span></p><h1 style="color: #FFFFFF">CheckApp</h1>
+        <br /><br />
+    </div>
+    <div id="content" class="container text-center">
+  <div></div>
+  <form id="acceso" class="form-signin">
+  <img class="mb-4" src="/docs/4.4/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+  <img src="img/personn.svg" style="color: #FFFFFF" height="60">
+  <p></p>
+  <h1 class="h3 mb-3 font-weight-normal" style="color: #FFFFFF">Ingreso al Sistema</h1>
+  <label for="inputEmail" class="sr-only">Nombre Completo</label>
+  <input type="email" id="nombre" style="background-color: #FFFFFF; padding-left: 10px;" class="form-control" placeholder="Nombre Completo" required autofocus>
+  <div>
+    <p></p>
+  </div>
+  <label for="inputPassword" class="sr-only">Número de Control</label>
+  <input type="password" id="control" style="background-color: #FFFFFF; padding-left: 10px;" maxlength="10" class="form-control" placeholder="Número de Control" required>
+  <div>
+    <p></p>
+  </div>
+  <button class="btn btn-lg btn-primary btn-block" type="button" onclick="compare()">Ingresar</button>
+</form>
+</div>
+<div id="footer" class="container text-right"style="bottom:10px; position: fixed">
+<footer>
+  <a href="#" class="btn btn-lg btn-secondary" type="button" onclick="help()">Ayuda</a>
+</footer>
+<p style="color: #FFFFFF">Copyright &copy; 2020 CheckApp.</p>
+   </div>
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/jquery.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script src="phonegap.js"></script>
+    
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+<script src="jquery.min.js"></script>
+<script type="text/javascript">
+      var x, nom, nc;
+      var ans1="jorge", ans2="73"; 
+      function main(){
+      window.location="main.html";
+      }
+
+      function denegar(){
+      window.location="index.html";
+      }
+
+      function help(){
+      window.location="contacto.html";
+      }
+
+      function compare(){
+      x=document.getElementById("acceso");
+      nom=x.elements["nombre"].value;
+      nc=x.elements["control"].value;
+      if(nom==ans1 && nc==ans2){
+      main();}
+      else{
+      denegar();}
+      }
+</script></p>
+</body>
+
+</html>
